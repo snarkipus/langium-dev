@@ -45,6 +45,36 @@
             ]
         },
         {
+            "name": "Run Expressions Extension",
+            "type": "extensionHost",
+            "request": "launch",
+            "runtimeExecutable": "${execPath}",
+            "args": [
+                "${workspaceFolder}/examples/expressions/example",
+                "--extensionDevelopmentPath=${workspaceFolder}/examples/expressions"
+            ]
+        },
+        {
+            "name": "Run SmallJava Extension",
+            "type": "extensionHost",
+            "request": "launch",
+            "runtimeExecutable": "${execPath}",
+            "args": [
+                "${workspaceFolder}/examples/small-java/examples",
+                "--extensionDevelopmentPath=${workspaceFolder}/examples/small-java"
+            ]
+        },
+        {
+            "name": "Run Hello World",
+            "type": "extensionHost",
+            "request": "launch",
+            "runtimeExecutable": "${execPath}",
+            "args": [
+                "${workspaceFolder}/examples/hello-world/examples",
+                "--extensionDevelopmentPath=${workspaceFolder}/examples/hello-world"
+            ]
+        },
+        {
             "name": "Attach to Language Server",
             "type": "pwa-node",
             "port": 6009,
@@ -58,7 +88,9 @@
                 "${workspaceFolder}/examples/arithmetics/out/**/*.js",
                 "${workspaceFolder}/examples/domainmodel/out/**/*.js",
                 "${workspaceFolder}/examples/statemachine/out/**/*.js",
-                "${workspaceFolder}/packages/langium-vscode/out/**/*.js"
+                "${workspaceFolder}/packages/langium-vscode/out/**/*.js",
+                "${workspaceFolder}/examples/expressions/out/**/*.js",
+                "${workspaceFolder}/examples/small-java/out/**/*.js"
             ]
         },
         {

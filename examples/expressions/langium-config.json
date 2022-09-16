@@ -1,0 +1,12 @@
+{
+    "projectName": "Expressions",
+    "languages": [{
+        "id": "expressions",
+        "grammar": "src/language-server/expressions.langium",
+        "fileExtensions": [".expressions"],
+        "textMate": {
+            "out": "syntaxes/expressions.tmLanguage.json"
+        }
+    }],
+    "out": "src/language-server/generated"
+}

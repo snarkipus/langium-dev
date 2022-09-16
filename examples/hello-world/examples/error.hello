@@ -1,0 +1,48 @@
+CONTAINER-START
+    fluffycontainer
+    BOX-START
+        BOX-NAME: fluffybox
+        BALL-START
+            fluffyball  
+        BALL-END
+        BALL-START
+            anotherball
+        BALL-END
+        CUBE-START
+            fluffycube
+        CUBE-END
+    BOX-END
+    BOX-START
+        BOX-NAME: anotherbox
+        BALL-START
+            anotherball
+        BALL-END
+        CUBE-START
+            anothercube
+        CUBE-END
+    BOX-END
+    CRATE-START
+        CRATE-NAME: fluffycrate
+        BALL-START
+            fluffyball
+        BALL-END
+        BALL-START
+            anotherball
+        BALL-END
+        CUBE-START
+            fluffycube
+        CUBE-END
+    CRATE-END
+    BUCKET-START
+        BUCKET-NAME: fluffybucket
+        BALL-START
+            fluffyball
+        BALL-END
+        BALL-START
+            anotherball
+        BALL-END
+        CUBE-START
+            fluffycube
+        CUBE-END
+    BUCKET-END
+CONTAINER-END

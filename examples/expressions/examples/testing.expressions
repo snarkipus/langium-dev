@@ -1,0 +1,33 @@
+// eval (((10 + 5) + 1) +2)
+
+// should not be valid - forward reference
+// var i = j + 1
+// var j = 0
+
+// should not be valid - mutual dependency (cycle)
+// var m = n + 1
+// var n = m + 1
+// var p = p + 1
+
+// var a = 0
+// var b = 1
+// var c = 2
+
+// eval a + b + c
+
+// var i = 10
+// eval 1 + 
+
+// Custom Content Assist - Ch 8
+var k = 0
+var j = 1
+// eval 1 +  // this should not reccomend 'i' but it does so the forward reference isn't tied in with the completions provider
+// Rework Thoughts: 
+//  * seems like I would need to extend the DefaultCompletionProvider class to ExpressionsCompletionProvider
+//  * override the protected method completionForCrossReference to limit the available references to those defined before
+//    using the isDefinedBefore(from: AstNode, to: AstNode) utility method
+//  * Figure out how to register the extended class with the services (replacing the default one? or adding it language-specific services?)
+// 
+var i = 10
+
+eval (1 + 10) < (2 * (3 + "a"))

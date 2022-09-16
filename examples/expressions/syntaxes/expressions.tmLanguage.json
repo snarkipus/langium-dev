@@ -1,0 +1,57 @@
+{
+  "name": "expressions",
+  "scopeName": "source.expressions",
+  "fileTypes": [
+    ".expressions"
+  ],
+  "patterns": [
+    {
+      "include": "#comments"
+    },
+    {
+      "name": "keyword.control.expressions",
+      "match": "\\b(eval|false|true|var)\\b"
+    },
+    {
+      "name": "string.quoted.double.expressions",
+      "begin": "\"",
+      "end": "\""
+    },
+    {
+      "name": "string.quoted.single.expressions",
+      "begin": "'",
+      "end": "'"
+    }
+  ],
+  "repository": {
+    "comments": {
+      "patterns": [
+        {
+          "name": "comment.block.expressions",
+          "begin": "/\\*",
+          "beginCaptures": {
+            "0": {
+              "name": "punctuation.definition.comment.expressions"
+            }
+          },
+          "end": "\\*/",
+          "endCaptures": {
+            "0": {
+              "name": "punctuation.definition.comment.expressions"
+            }
+          }
+        },
+        {
+          "begin": "//",
+          "beginCaptures": {
+            "1": {
+              "name": "punctuation.whitespace.comment.leading.expressions"
+            }
+          },
+          "end": "(?=$)",
+          "name": "comment.line.expressions"
+        }
+      ]
+    }
+  }
+}

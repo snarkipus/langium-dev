@@ -5,7 +5,10 @@
         "<rootDir>/packages/langium-cli/test",
         "<rootDir>/examples/arithmetics/test",
         "<rootDir>/examples/domainmodel/test",
-        "<rootDir>/examples/statemachine/test"
+        "<rootDir>/examples/statemachine/test",
+        "<rootDir>/examples/expressions/src/test",
+        "<rootDir>/examples/small-java/src/test",
+        "<rootDir>/examples/hello-world/src/test"
     ],
     "collectCoverageFrom": ["packages/langium/src/**/{!(generated),}/*"],
     "testEnvironment": "node",
